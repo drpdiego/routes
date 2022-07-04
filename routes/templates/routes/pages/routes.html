@@ -1,17 +1,46 @@
 {% include 'routes/partials/head.html' %}
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <a href="/" class="main-logo">
-                <h1>
-                    <i class="fas fa-road main-logo-icon"></i>
-                    <span>Rotas</span>
-                    <i class="fas fa-road main-logo-icon"></i>
-                </h1>
-            </a>
+    {% include 'routes/partials/header.html' %}
+    {% include 'routes/partials/search.html' %}
+
+    <main class="main-content-container">
+        <div class="main-content-list container">
+            <div class="routes-list-item">
+                <div class="route">
+                    <img src="https://via.placeholder.com/1280x720.png/323232" alt="Temporário">
+                    <div class="route-title-container">
+                        <h2 class="route-title">Lorem ipsum dolor sit amet.</h2>
+                    </div>
+
+                    <div class="route-author">
+                        <span class="route-author-item">
+                            <i class="fas fa-user"></i>
+                            Diego Pereira
+                        </span>
+                        <span class="route-author-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            02/07/2022
+                        </span>
+                        <span class="route-author-item">
+                            <a href="/">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Algo sobre a rota</span>
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="route-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur 
+                            adipisicing elit. Consequuntur
+                            tempore at quae debitis? Sequi!
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </main>
 </body>
 
 </html>
